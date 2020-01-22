@@ -1,2 +1,49 @@
-nas
-D
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <ul class="nav" id="myTopnav">
+    <li><a href="/english">English</a></li>
+    <li><a href="/German/">German</a></li>
+    <li><a href="/Hungary/">Hungary</a></li>
+    <li><a href="/Russian/">Russian</a></li>
+    <li><a href="/China/">China</a></li>
+    <div class="left">
+    <li><a href="/LoginRegister/">Register/Login</a></li>
+    </div>
+
+  </ul>
+
+  <div class="sidenav" id="myTopnav">
+    <a href="#text1">Text</a>
+    <a href="#text2">Text</a>
+    <a href="#text3">Text</a>
+    <a href="#text4">Text</a>
+  </div>
+<div style="margin-left:120px;padding:0px 15px;height:1000px;">
+  <h2>Some text..</h2>
+  <h3>Some text..</h3>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+</div>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+</body>
+</html>
