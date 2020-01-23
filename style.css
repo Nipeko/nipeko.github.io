@@ -1,4 +1,5 @@
 
+
   .nav{
     border:1px solid rgb(250, 245, 245);
     border-width:0px 0px;
@@ -57,15 +58,15 @@
       float:right;
   }
 
-  .dropbtn {
-    background-color: #ccc;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-
-  }
+ .dropbtn {
+  background-color: #ccc;
+  height:40px;
+  color: black;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
   
   .dropbtn:hover, .dropbtn:focus {
     background-color: #ccc;
@@ -74,7 +75,7 @@
   .dropdown {
     position: relative;
     display: inline-block;
-    margin-top: -150px;
+   top: -40px;
   }
   
   .dropdown-content {
