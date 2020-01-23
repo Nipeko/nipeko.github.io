@@ -64,6 +64,7 @@
     font-size: 16px;
     border: none;
     cursor: pointer;
+
   }
   
   .dropbtn:hover, .dropbtn:focus {
@@ -73,6 +74,7 @@
   .dropdown {
     position: relative;
     display: inline-block;
+    margin-top: -150px;
   }
   
   .dropdown-content {
