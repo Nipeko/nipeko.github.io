@@ -6,9 +6,6 @@
 <body>
 
   <ul class="nav" id="myTopnav">
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
     <li><a href="/english">English</a></li>
     <li><a href="/German/">German</a></li>
     <li><a href="/Hungary/">Hungary</a></li>
@@ -16,11 +13,19 @@
     <li><a href="/China/">China</a></li>
     <div class="left">
     <li><a href="/LoginRegister/">Register/Login</a></li>
-   
     </div>
 
   </ul>
 
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  
 <div style="margin-left:120px;padding:0px 15px;height:1000px;">
   <h2>Some text..</h2>
   <h3>Some text..</h3>
@@ -32,9 +37,7 @@
   <p>Some text..</p>
   <p>Some text..</p>
 </div>
-<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+
 <script>
   function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -44,6 +47,23 @@
       x.className = "topnav";
     }
   }
+  function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
   </script>
 </body>
 </html>
