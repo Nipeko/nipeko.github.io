@@ -24,9 +24,6 @@
     <button onclick="myFunction()" class="dropbtn"><i class="fas fa-bars"></i></button>
     <div id="myDropdown" class="dropdown-content">
       <a href="#home">Home</a>
-<ul class="dropdown-menu">
-          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
-          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </div>
@@ -70,6 +67,13 @@ i.onclick = function(event) {
     }
   }
 }
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
   </script>
 </body>
 </html>
