@@ -6,13 +6,6 @@
 <body>
 
   <ul class="nav" id="myTopnav">
-    <button onclick="myFunction()" class="dropbtn" ><i class="fas fa-bars"></i>
-    </button>
-    <div id="myDropdown" class="dropdown-content">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </div>
     <li><a href="/english">English</a></li>
     <li><a href="/German/">German</a></li>
     <li><a href="/Hungary/">Hungary</a></li>
@@ -24,7 +17,17 @@
 
   </ul>
 
- 
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn"><i class="fas fa-bars"></i></button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    
+  
+  </div>
+
 <div style="margin-left:120px;padding:0px 15px;height:1000px;">
   <h2>Some text..</h2>
   <h3>Some text..</h3>
@@ -46,23 +49,6 @@
       x.className = "topnav";
     }
   }
-  function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
   </script>
 </body>
 </html>
