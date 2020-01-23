@@ -56,3 +56,10 @@
   .left{
       float:right;
   }
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    left:0;
+    top: 0;
+  }
