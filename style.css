@@ -100,3 +100,13 @@
   .dropdown a:hover {background-color: #f1f1f1;}
   
   .show {display: block;}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
